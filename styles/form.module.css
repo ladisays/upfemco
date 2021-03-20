@@ -1,0 +1,36 @@
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--gray-dark);
+}
+
+.field textarea {
+  resize: none;
+}
+
+.field[data-invalid="true"] p {
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  color: var(--white);
+  background-color: var(--red);
+  font-size: 0.8rem;
+  border-radius: 4px 4px 0 0;
+}
+.field[data-invalid="true"] input[type="text"],
+.field[data-invalid="true"] input[type="email"],
+.field[data-invalid="true"] textarea {
+  border-color: var(--red);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

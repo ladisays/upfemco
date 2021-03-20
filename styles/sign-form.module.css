@@ -1,0 +1,42 @@
+.root {
+  background-color: var(--yellow);
+  padding: 1rem;
+}
+
+.root button,
+.root a {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.error {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.share p {
+  margin-bottom: 2rem;
+}
+
+.share p:first-child {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.share hr {
+  margin: 1rem auto;
+  width: 85%;
+  border-color: var(--gray-dark);
+}
+
+@media (min-width: 992px) {
+  .share {
+    padding: 1rem;
+  }
+}
