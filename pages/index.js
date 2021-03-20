@@ -14,21 +14,20 @@ const buildMeta = () => {
   const metaTitle = '#UPFEMCO';
   const metaDescription =
     'The feminist coalition is a group of young Nigerian feminists formed in July 2020 with a mission to champion equality for women in Nigerian society with a core focus on education, financial freedom and representation in public office.';
-  const metaImage = '/femco.jpg';
+  const metaImage = '/banner.jpg';
 
   return [
     { itemProp: 'name', content: metaTitle },
     { itemProp: 'description', content: metaDescription },
-    { itemProp: 'image', content: metaImage },
     { name: 'description', content: metaDescription },
     { property: 'og:title', content: metaTitle },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: process.env.NEXT_PUBLIC_ADDRESS },
     { property: 'og:locale', content: 'en_GB' },
-    { property: 'og:card', content: 'summary' },
     { property: 'og:image', content: metaImage },
     { property: 'og:description', content: metaDescription },
-    { property: 'og:site_name', content: metaTitle }
+    { property: 'og:site_name', content: metaTitle },
+    { name: 'robots', content: 'index, follow' }
   ];
 };
 
