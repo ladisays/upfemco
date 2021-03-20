@@ -8,7 +8,7 @@ const fetcher = () => axios.get('/api/count');
 
 const formatNumber = (num) => new Intl.NumberFormat('en-GB').format(num);
 const buildText = (count, isSelfSigned) => {
-  if (count > 2) {
+  if (count > 1) {
     let text = 'others have shown their support';
 
     if (isSelfSigned) {
